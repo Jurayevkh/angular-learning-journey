@@ -5,9 +5,12 @@ import { BlogComponentComponent } from './blog-component/blog-component.componen
 import { NotFoundComponent } from './not-found/not-found.component';
 
 export const routes: Routes = [
-    {path:"home",component:HomeComponentComponent},
+    {path:"home" /*here in property path we give path for our component*/,component:HomeComponentComponent},
     {path:"about",component:AboutComponentComponent},
     {path:"blog",component:BlogComponentComponent},
     {path:"",redirectTo:"home",pathMatch:"full"},
     {path:"**",component:NotFoundComponent}
 ];
+
+
+// In this file we give route to our component and our app will have routing
