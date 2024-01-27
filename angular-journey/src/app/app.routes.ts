@@ -3,11 +3,13 @@ import { HomeComponentComponent } from './home-component/home-component.componen
 import { AboutComponentComponent } from './about-component/about-component.component';
 import { BlogComponentComponent } from './blog-component/blog-component.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { FormExampleComponent } from './form-example/form-example.component';
 
 export const routes: Routes = [
     {path:"home" /*here in property path we give path for our component*/,component:HomeComponentComponent},
     {path:"about",component:AboutComponentComponent},
     {path:"blog",component:BlogComponentComponent},
+    {path:"form",component:FormExampleComponent},
     {path:"",redirectTo:"home",pathMatch:"full"},
     {path:"**",component:NotFoundComponent}
 ];
