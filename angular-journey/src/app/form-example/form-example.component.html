@@ -1,0 +1,17 @@
+<h1> Just form exapmle in angular</h1>
+
+<form [formGroup]="form" (submit)="send()">
+    <p>
+        <label for="name">FIO</label>
+    </p>
+    <input type="text" id="name" name="name" formControlName="name">
+    
+    <p>
+        <label for="age">Yosh</label>
+    </p>
+    <input type="number" id="age" name="age" formControlName="age">
+
+    <p>
+        <button type="submit">Send</button>
+    </p>
+</form>
